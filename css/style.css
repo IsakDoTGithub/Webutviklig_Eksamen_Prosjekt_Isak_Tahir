@@ -294,21 +294,107 @@ footer ul li a {
 
 
 /* main våre beste produkter*/
-#popular-products {
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    margin: 10px 20px;
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Produktdetaljer */
+#product-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-images img {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+}
+
+.thumbnail-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumbnail-images img {
+    width: 100px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.product-info h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.product-info a {
+    display: inline-block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.product-info a:hover {
+    color: #007bff;
+}
+
+.add-to-cart {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #555;
+}
+
+/* Relaterte produkter */
+#related-products {
     padding: 20px;
     text-align: center;
 }
 
-#popular-products h2 {
+#related-products h2 {
     font-size: 2rem;
     margin-bottom: 10px;
 }
 
-#popular-products p {
+#related-products p {
     font-size: 1rem;
     margin-bottom: 20px;
 }
 
+/* Filtreringsknapper */
 .buttons-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -339,6 +425,7 @@ footer ul li a {
     color: white;
 }
 
+/* Produktkort */
 .product-cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -357,7 +444,7 @@ footer ul li a {
     width: 100%;
 }
 
-.product-card img {
+.product-card picture img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -373,7 +460,13 @@ footer ul li a {
     color: #555;
 }
 
+/* Responsiv tilpasning */
 @media (min-width: 768px) {
+    #product-detail {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     .buttons-container {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -385,57 +478,6 @@ footer ul li a {
 
 @media (min-width: 992px) {
     .product-cards {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
-/*seksjon 3 */
-#popular-categories {
-    padding: 20px;
-    text-align: center;
-}
-
-#popular-categories h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-#popular-categories p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
-.category-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    justify-items: center;
-}
-
-.category-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid black;
-    border-radius: 8px;
-    height: 150px;
-    width: 100%;
-    max-width: 300px;
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-@media (min-width: 768px) {
-    .category-cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 992px) {
-    .category-cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
