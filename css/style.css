@@ -388,5 +388,54 @@ footer ul li a {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+/*seksjon 3 */
+#popular-categories {
+    padding: 20px;
+    text-align: center;
+}
 
+#popular-categories h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#popular-categories p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.category-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+
+.category-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 8px;
+    height: 150px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    .category-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .category-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
