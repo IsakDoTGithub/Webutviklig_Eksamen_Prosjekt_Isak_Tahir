@@ -506,3 +506,242 @@ footer ul li a {
     }
 }
 
+
+/*Reviews*/
+#reviews {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#reviews h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#reviews p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.review-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+.review-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.review-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.review-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.review-card p:first-of-type {
+    color: #ffa500;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+    .review-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .review-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Ny side, product html**********************************************************************/
+/* Breadcrumb */
+.breadcrumb {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 5px;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Product Detail */
+#product-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-images img {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.thumbnail-images {
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnail-images img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: transform 0.2s;
+}
+
+.thumbnail-images img:hover {
+    transform: scale(1.1);
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-info h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.product-info a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.product-info a:hover {
+    text-decoration: underline;
+}
+
+.product-info p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.add-to-cart {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-to-cart:hover {
+    background-color: #007bff;
+    transform: scale(1.05);
+}
+
+/* Related Products */
+#related-products {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#related-products h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    #product-detail {
+        grid-template-columns: 1fr;
+    }
+
+    .breadcrumb {
+        font-size: 0.8rem;
+    }
+}
