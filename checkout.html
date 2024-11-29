@@ -37,12 +37,63 @@
             </ul>
         </div>
     </header>
-    <main>
-        <section id="banner">placeholder</section>
-        <section id="popular-products">plaseholder</section>
-        <section id="categories">placeholder</section>
-        <section id="reviews">placeholder</section>
+    <main class="checkout-page">
+        <h1>Kasse</h1>
+        <section class="shoppingbag">
+            <h2>Shoppingbag</h2>
+            <article>
+                <img src="https://picsum.photos/100" alt="Produktbilde">
+                <h3>Produktnavn 1</h3>
+                <p>Pris: 299,-</p>
+                <p>Farge: Rød</p>
+            </article>
+            <article>
+                <img src="https://picsum.photos/100" alt="Produktbilde">
+                <h3>Produktnavn 2</h3>
+                <p>Pris: 399,-</p>
+                <p>Farge: Blå</p>
+            </article>
+        </section>
+        <section class="personal-info">
+            <h2>Personopplysninger</h2>
+            <form>
+                <label for="fornavn">Fornavn:</label>
+                <input type="text" id="fornavn" name="fornavn" required>
+                <label for="etternavn">Etternavn:</label>
+                <input type="text" id="etternavn" name="etternavn" required>
+                <label for="adresse">Gateadresse:</label>
+                <input type="text" id="adresse" name="adresse" required>
+                <label for="postnummer">Postnummer:</label>
+                <input type="text" id="postnummer" name="postnummer" required>
+                <label for="poststed">Poststed:</label>
+                <input type="text" id="poststed" name="poststed" required>
+                <button type="submit">Lagre</button>
+                <button type="reset">Avbryt</button>
+            </form>
+        </section>
+        <section class="delivery">
+            <h2>Levering</h2>
+            <form>
+                <label><input type="radio" name="levering" value="ekspress_hjem" required> Ekspresslevering hjem</label>
+                <label><input type="radio" name="levering" value="ekspress_utlevering"> Ekspress pakke til utleveringssted</label>
+                <label><input type="radio" name="levering" value="standard_hjem"> Standard hjemlevering</label>
+            </form>
+        </section>
+        <section class="payment">
+            <h2>Betaling</h2>
+            <form>
+                <label for="kortnummer">Kortnummer:</label>
+                <input type="text" id="kortnummer" name="kortnummer" required>
+                <label for="utløpsdato">Utløpsdato:</label>
+                <input type="text" id="utløpsdato" name="utløpsdato" required>
+                <label for="cvc">CVC/CVV:</label>
+                <input type="text" id="cvc" name="cvc" required>
+                <p>Totalt å betale: 698,-</p>
+                <button type="submit">Fullfør kjøp</button>
+            </form>
+        </section>
     </main>
+    
     <footer>
         <section class="footer-logo-ingress">
             <a href="index.html">
