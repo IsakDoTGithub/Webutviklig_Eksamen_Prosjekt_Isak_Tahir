@@ -46,7 +46,7 @@
                     <section>
                         <h2>Produktnavn</h2>
                         <p>Kr 1999</p>
-                        <p>Farge: beige</p>
+                        <p>Farge: svart</p>
                     </section>
                 </article>
             </a>
@@ -56,7 +56,7 @@
                     <section>
                         <h2>Produktnavn</h2>
                         <p>Kr 1999</p>
-                        <p>Farge: beige</p>
+                        <p>Farge: svart</p>
                     </section>
                 </article>
             </a>
@@ -66,7 +66,7 @@
                     <section>
                         <h2>Produktnavn</h2>
                         <p>Kr 1999</p>
-                        <p>Farge: beige</p>
+                        <p>Farge: svart</p>
                     </section>
                 </article>
             </a>
@@ -86,7 +86,7 @@
                 <input type="text" id="adresse" required>
                 <fieldset>
                     <label for="postnummer">Postnummer</label>
-                    <input type="text" id="postnummer" required>
+                    <input type="number" id="postnummer" required>
                     <label for="poststed">Poststed</label>
                     <input type="text" id="poststed" required>
                 </fieldset>
@@ -94,24 +94,50 @@
                 <a href="#" class="cancel">Avbryt</a>
             </form>
         </section>
-    
+        
+        <section id="delivery-options">
+            <h2>3. Levering</h2>
+            <form>
+                <fieldset>
+                    <legend>Velg leveringsalternativ:</legend>
+                    <label>
+                        <input type="radio" name="delivery" value="express-home" required>
+                        Ekspresslevering hjem (1-2 dager)
+                    </label>
+                    <label>
+                        <input type="radio" name="delivery" value="express-pickup">
+                        Ekspress pakke til utleveringssted (1-2 dager)
+                    </label>
+                    <label>
+                        <input type="radio" name="delivery" value="standard-home">
+                        Standard hjemlevering (3-5 dager)
+                    </label>
+                </fieldset>
+            </form>
+        </section>
+        
+
         <h1>4. Betaling</h1>
         <section class="payment">
             <form>
                 <label for="kortnummer">Kortnummer</label>
-                <input type="text" id="kortnummer" required>
+                <input type="number" id="kortnummer" required>
                 <fieldset>
                     <label for="utløpsdato">Utløpsdato</label>
-                    <input type="text" id="utløpsdato" required>
+                    <input type="date" id="utløpsdato" required>
                     <label for="cvc">CVC/CVV</label>
-                    <input type="text" id="cvc" required>
+                    <input type="number" id="cvc" required>
                 </fieldset>
                 <p class="total-price">1 199 kr</p>
                 <button type="submit">Fullfør kjøp</button>
                 <p class="consent">
-                    Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige.
+                    Du bekrefter herved at opplysningene og dokumentene du har
+                    oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg
+                    retten til å heve eller avslutte avtaleforholdet dersom det foreligger
+                    uriktige eller ufullstendige opplysninger.
                 </p>
                 <label><input type="checkbox"> Ja takk! Send nyhetsbrev til meg.</label>
+                <label><input type="checkbox"> Jeg ønsker å motta tekstmelding med tilbud for nyheter.</label>
             </form>
         </section>
     </main>
