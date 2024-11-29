@@ -695,7 +695,7 @@ footer ul li a {
 }
 
 .product-cards {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     justify-items: center;
