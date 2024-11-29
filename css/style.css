@@ -107,7 +107,7 @@ header {
     transform: scale(1.2); 
 }
 
-/*Bruker 992px som brytnings punkt da det er standard for "large devices"  https://wwaw.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
+
 @media (min-width: 992px) {
     body {
         padding: 0 10px; 
@@ -493,7 +493,7 @@ footer ul li a {
     margin: 0;
 }
 
-/* Responsive design for larger screens */
+
 @media (min-width: 768px) {
     .category-cards {
         grid-template-columns: repeat(2, 1fr);
@@ -569,7 +569,7 @@ footer ul li a {
     font-weight: bold;
 }
 
-/* Responsive design */
+
 @media (min-width: 768px) {
     .review-cards {
         grid-template-columns: repeat(2, 1fr);
