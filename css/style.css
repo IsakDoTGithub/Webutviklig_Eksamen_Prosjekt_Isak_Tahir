@@ -752,69 +752,109 @@ footer ul li a {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.checkout-page h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.shopping-bag article {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.shopping-bag article img {
+    width: 100px;
+}
+
+.shopping-bag article span {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-info form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.personal-info form fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border: none;
+    padding: 0;
+}
+
+.personal-info form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.personal-info form .cancel {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.payment form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.payment form fieldset {
+    display: flex;
+    gap: 10px;
+    border: none;
+    padding: 0;
+}
+
+.payment form .total-price {
+    font-size: 1.5rem;
+    font-weight: bold;
     text-align: center;
 }
 
-.checkout-page h1,
-.checkout-page h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.checkout-page section {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-}
-
-.checkout-page section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-.checkout-page article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.checkout-page article img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.checkout-page form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.checkout-page form input,
-.checkout-page form button {
+.payment form button {
     width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.checkout-page form button {
-    background-color: #007bff;
+    padding: 15px;
+    background-color: #333;
     color: white;
-    cursor: pointer;
+    border: none;
+    border-radius: 5px;
 }
 
-.checkout-page form button:hover {
-    background-color: #0056b3;
+.payment form .consent {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 0.9rem;
+    color: #555;
 }
 
-.checkout-page form input[type="radio"] {
-    margin-right: 10px;
+@media (min-width: 768px) {
+    .shopping-bag article {
+        flex-direction: row;
+    }
+
+    .personal-info form fieldset {
+        flex-wrap: nowrap;
+    }
+
+    .payment form fieldset {
+        flex-wrap: nowrap;
+    }
 }

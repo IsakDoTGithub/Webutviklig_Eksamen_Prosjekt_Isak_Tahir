@@ -38,61 +38,78 @@
         </div>
     </header>
     <main class="checkout-page">
-        <h1>Kasse</h1>
-        <section class="shoppingbag">
-            <h2>Shoppingbag</h2>
+        <h1>1. Shoppingbagen din</h1>
+        <section class="shopping-bag">
             <article>
-                <img src="https://picsum.photos/100" alt="Produktbilde">
-                <h3>Produktnavn 1</h3>
-                <p>Pris: 299,-</p>
-                <p>Farge: Rød</p>
+                <img src="img/black_dog237-200x300.jpg" alt="Produktbilde">
+                <span>
+                    <h2>Produktnavn</h2>
+                    <p>Kr 1999</p>
+                    <p>Farge: beige</p>
+                </span>
             </article>
             <article>
-                <img src="https://picsum.photos/100" alt="Produktbilde">
-                <h3>Produktnavn 2</h3>
-                <p>Pris: 399,-</p>
-                <p>Farge: Blå</p>
+                <img src="img/Black_dog237-1000x1500.jpg" alt="Produktbilde">
+                <span>
+                    <h2>Produktnavn</h2>
+                    <p>Kr 1999</p>
+                    <p>Farge: beige</p>
+                </span>
+            </article>
+            <article>
+                <img src="img/Black_dog237-1000x1500.jpg" alt="Produktbilde">
+                <span>
+                    <h2>Produktnavn</h2>
+                    <p>Kr 1999</p>
+                    <p>Farge: beige</p>
+                </span>
             </article>
         </section>
+    
+        <h1>2. Dine opplysninger</h1>
         <section class="personal-info">
-            <h2>Personopplysninger</h2>
             <form>
-                <label for="fornavn">Fornavn:</label>
-                <input type="text" id="fornavn" name="fornavn" required>
-                <label for="etternavn">Etternavn:</label>
-                <input type="text" id="etternavn" name="etternavn" required>
-                <label for="adresse">Gateadresse:</label>
-                <input type="text" id="adresse" name="adresse" required>
-                <label for="postnummer">Postnummer:</label>
-                <input type="text" id="postnummer" name="postnummer" required>
-                <label for="poststed">Poststed:</label>
-                <input type="text" id="poststed" name="poststed" required>
+                <fieldset>
+                    <label for="fornavn">Fornavn</label>
+                    <input type="text" id="fornavn" required>
+                    <label for="etternavn">Etternavn</label>
+                    <input type="text" id="etternavn" required>
+                </fieldset>
+                <label for="adresse">Gateadresse</label>
+                <input type="text" id="adresse" required>
+                <fieldset>
+                    <label for="postnummer">Postnummer</label>
+                    <input type="text" id="postnummer" required>
+                    <label for="poststed">Poststed</label>
+                    <input type="text" id="poststed" required>
+                </fieldset>
                 <button type="submit">Lagre</button>
-                <button type="reset">Avbryt</button>
+                <a href="#" class="cancel">Avbryt</a>
             </form>
         </section>
-        <section class="delivery">
-            <h2>Levering</h2>
-            <form>
-                <label><input type="radio" name="levering" value="ekspress_hjem" required> Ekspresslevering hjem</label>
-                <label><input type="radio" name="levering" value="ekspress_utlevering"> Ekspress pakke til utleveringssted</label>
-                <label><input type="radio" name="levering" value="standard_hjem"> Standard hjemlevering</label>
-            </form>
-        </section>
+    
+        <h1>4. Betaling</h1>
         <section class="payment">
-            <h2>Betaling</h2>
             <form>
-                <label for="kortnummer">Kortnummer:</label>
-                <input type="text" id="kortnummer" name="kortnummer" required>
-                <label for="utløpsdato">Utløpsdato:</label>
-                <input type="text" id="utløpsdato" name="utløpsdato" required>
-                <label for="cvc">CVC/CVV:</label>
-                <input type="text" id="cvc" name="cvc" required>
-                <p>Totalt å betale: 698,-</p>
+                <label for="kortnummer">Kortnummer</label>
+                <input type="text" id="kortnummer" required>
+                <fieldset>
+                    <label for="utløpsdato">Utløpsdato</label>
+                    <input type="text" id="utløpsdato" required>
+                    <label for="cvc">CVC/CVV</label>
+                    <input type="text" id="cvc" required>
+                </fieldset>
+                <p class="total-price">1 199 kr</p>
                 <button type="submit">Fullfør kjøp</button>
+                <p class="consent">
+                    Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige.
+                </p>
+                <label><input type="checkbox"> Ja takk! Send nyhetsbrev til meg.</label>
             </form>
         </section>
     </main>
+    
+    
     
     <footer>
         <section class="footer-logo-ingress">
